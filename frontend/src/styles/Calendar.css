@@ -1,0 +1,76 @@
+/* Container geral */
+.calendar-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Cabeçalho do calendário */
+.calendar-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.calendar-header h2 {
+    font-size: 1.8rem;
+    color: #005f7f;
+}
+
+/* Grid do calendário */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    text-align: center;
+}
+
+/* Cabeçalho dos dias da semana */
+.day-name {
+    font-weight: bold;
+    background: #005f7f;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Dias do mês */
+.day {
+    background: #f4f4f4;
+    padding: 20px 0;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.day:hover {
+    background: #6ec1e4;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Dias vazios (antes do 1º dia do mês) */
+.day.empty {
+    background: transparent;
+    cursor: default;
+    pointer-events: none;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .calendar-container {
+        padding: 15px;
+    }
+
+    .day {
+        padding: 15px 0;
+    }
+
+    .calendar-header h2 {
+        font-size: 1.5rem;
+    }
+}

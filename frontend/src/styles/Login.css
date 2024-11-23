@@ -1,0 +1,90 @@
+/* Fundo geral do login */
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #6EC1E4, #ffffff); /* Gradiente azul claro para branco */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Logo no topo */
+.login-logo {
+    margin-bottom: 20px;
+}
+
+/* Caixa do formulário */
+.login form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+    width: 320px;
+    text-align: center;
+}
+
+/* Título */
+.login h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #005f7f;
+    font-family: 'Georgia', serif;
+}
+
+/* Ícones nos campos */
+.login .input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.login .input-group input {
+    border: none;
+    padding: 10px;
+    flex: 1;
+    font-size: 1rem;
+    color: #555;
+}
+
+.login .input-group svg {
+    background: #f4f4f4;
+    padding: 10px;
+    color: #005f7f;
+}
+
+/* Botão */
+.login button {
+    background: #005f7f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login button:hover {
+    background: #004566;
+}
+
+/* Mensagem de erro */
+.error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Estilização responsiva */
+@media (max-width: 768px) {
+    .login form {
+        width: 90%;
+    }
+}

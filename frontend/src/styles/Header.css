@@ -1,0 +1,35 @@
+.header {
+    background-color: #005f7f;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right p {
+    margin-right: 20px;
+}
+
+.header-right button {
+    background: white;
+    color: #005f7f;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header-right button:hover {
+    background: #00aaff;
+    color: white;
+}
