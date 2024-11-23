@@ -1,5 +1,5 @@
-version: '3.8' 
- 
+version: '3.8'
+
 services: 
   backend: 
     build: ./backend 
@@ -16,6 +16,8 @@ services:
       - "3000:3000" 
     depends_on: 
       - backend 
+    environment: 
+      - NODE_OPTIONS=--openssl-legacy-provider
  
   mongo: 
     image: mongo:5.0 
