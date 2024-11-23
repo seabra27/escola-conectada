@@ -6,8 +6,8 @@ CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
 
 # Simulação de banco de dados
 users = [
-    {"email": "aluno@gabriel", "password": "12345", "role": "student"},
-    {"email": "professor@gabriel", "password": "12345", "role": "teacher"},
+    {"email": "aluno@pedro", "password": "12345", "role": "student"},
+    {"email": "professor@pedro", "password": "12345", "role": "teacher"},
     {"email": "professor@fabiohenriquesilva", "password": "12345", "role": "teacher"}
 ]
 
